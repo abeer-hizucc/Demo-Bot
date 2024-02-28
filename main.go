@@ -1,8 +1,9 @@
 package main
 
-import _ "Demo-Bot/OfficeNotification"
+import "Demo-Bot/OfficeNotification"
 
 func main() {
+	OfficeNotification.ScheduleNotifications()
 
 	select {}
 }

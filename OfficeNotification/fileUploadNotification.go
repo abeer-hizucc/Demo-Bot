@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func sendNotification(message string) {
+func SendNotification(message string) {
 
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
