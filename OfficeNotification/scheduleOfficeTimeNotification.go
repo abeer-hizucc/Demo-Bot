@@ -21,7 +21,7 @@ func ScheduleNotifications() {
 	}
 
 	// Schedule the end of the office time at 4:30 PM on weekdays
-	_, err = c.AddFunc("00 30 16 * * 0-6", func() {
+	_, err = c.AddFunc("00 15 11 * * 0-6", func() {
 		SendNotification("Office time has ended!")
 	})
 	if err != nil {
